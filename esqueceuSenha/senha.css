@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container-esqueci-senha {
+    background-color: #343a40;
+}
+
+.cartao-esqueci-senha {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+}
+
+.titulo-esqueci-senha {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.texto-subtitulo {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.linha-abaixo-titulo {
+    width: 50px;
+    height: 4px;
+    background-color: #343a40;
+    margin: 10px auto 15px;
+}
+
+.feedback-invalido {
+    font-size: 0.85rem;
+}
+
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #343a40;
+    box-shadow: 0 0 0.25rem rgba(52, 58, 64, 0.25);
+}
+
+.btn-primary {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-primary:hover {
+    background-color: #23272b;
+    border-color: #23272b;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+.text-secondary:hover {
+    color: #343a40;
+    text-decoration: underline;
+}

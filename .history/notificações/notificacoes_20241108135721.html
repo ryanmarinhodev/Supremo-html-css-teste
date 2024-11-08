@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Notificações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./notificacoes.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <nav class="col-md-3 col-lg-2 barra-lateral d-md-flex flex-column align-items-center p-3 bg-dark text-white">
+                <div class="logo-container my-4">
+                    <img src="../images/logo-supremo-branco.png" alt="Logo Supremo" class="logo">
+                </div>
+                <ul class="nav flex-column w-100">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="#">🔔 Notificações</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="col px-4 conteudo-principal">
+                <header class="cabecalho d-flex justify-content-between align-items-center mt-4">
+                    <h2>Painel de Notificações</h2>
+                    <button class="btn btn-dark">+ Nova Notificação</button>
+                </header>
+
+                <section class="painel-notificacoes mt-4">
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control" placeholder="Buscar por título ou mensagem">
+                        <button class="btn btn-outline-dark" type="button">🔍</button>
+                        <button class="btn btn-outline-dark ms-2" type="button">Filtros</button>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle table-bordered">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th class="text-center">Título</th>
+                                    <th class="text-center">Mensagem</th>
+                                    <th class="text-center">Data</th>
+                                    <th class="text-center">Status</th>
+                                    <th class="text-center">Prioridade</th>
+                                    <th class="text-center">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aviso Importante</td>
+                                    <td>Atualização de segurança disponível.</td>
+                                    <td class="text-center">08-11-2024</td>
+                                    <td class="text-center"><span class="badge bg-danger">Não Lida</span></td>
+                                    <td class="text-center"><span class="badge bg-warning text-dark">Alta</span></td>
+                                    <td class="acoes text-center">
+                                        <button class="btn btn-outline-dark btn-sm">✏️ Editar</button>
+                                        <button class="btn btn-outline-danger btn-sm">🗑️ Excluir</button>
+                                        <button class="btn btn-outline-success btn-sm">✔️ Marcar como Lida</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Notificação de Manutenção</td>
+                                    <td>O sistema ficará offline para manutenção programada às 02:00 AM.</td>
+                                    <td class="text-center">07-11-2024</td>
+                                    <td class="text-center"><span class="badge bg-danger">Não Lida</span></td>
+                                    <td class="text-center"><span class="badge bg-warning text-dark">Alta</span></td>
+                                    <td class="acoes text-center">
+                                        <button class="btn btn-outline-dark btn-sm">✏️ Editar</button>
+                                        <button class="btn btn-outline-danger btn-sm">🗑️ Excluir</button>
+                                        <button class="btn btn-outline-success btn-sm">✔️ Marcar como Lida</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nova Atualização</td>
+                                    <td>Nova versão do sistema disponível para download.</td>
+                                    <td class="text-center">05-11-2024</td>
+                                    <td class="text-center"><span class="badge bg-danger">Não Lida</span></td>
+                                    <td class="text-center"><span class="badge bg-warning text-dark">Alta</span></td>
+                                    <td class="acoes text-center">
+                                        <button class="btn btn-outline-dark btn-sm">✏️ Editar</button>
+                                        <button class="btn btn-outline-danger btn-sm">🗑️ Excluir</button>
+                                        <button class="btn btn-outline-success btn-sm">✔️ Marcar como Lida</button>
+                                        <tr>
+                                            <td>Mensagem do Sistema</td>
+                                            <td>Backup concluído com sucesso.</td>
+                                            <td class="text-center">05-11-2024</td>
+                                            <td class="text-center"><span class="badge bg-success">Lida</span></td>
+                                            <td class="text-center"><span class="badge bg-dark">Normal</span></td>
+                                            <td class="acoes text-center">
+                                                <button class="btn btn-outline-dark btn-sm">✏️ Editar</button>
+                                                <button class="btn btn-outline-danger btn-sm">🗑️ Excluir</button>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Conexão Estável</td>
+                                    <td>Conexão ao servidor restaurada com sucesso.</td>
+                                    <td class="text-center">04-11-2024</td>
+                                    <td class="text-center"><span class="badge bg-success">Lida</span></td>
+                                    <td class="text-center"><span class="badge bg-dark">Normal</span></td>
+                                    <td class="acoes text-center">
+                                        <button class="btn btn-outline-dark btn-sm">✏️ Editar</button>
+                                        <button class="btn btn-outline-danger btn-sm">🗑️ Excluir</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Relatório Mensal</td>
+                                    <td>Seu relatório mensal está pronto para visualização.</td>
+                                    <td class="text-center">04-11-2024</td>
+                                    <td class="text-center"><span class="badge bg-success">Lida</span></td>
+                                    <td class="text-center"><span class="badge bg-dark">Normal</span></td>
+                                    <td class="acoes text-center">
+                                        <button class="btn btn-outline-dark btn-sm">✏️ Editar</button>
+                                        <button class="btn btn-outline-danger btn-sm">🗑️ Excluir</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Ryan Marinho</h2>
+                </div>
+                <nav class="footer-nav">
+                    <a href="https://portfolio-ryann.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <i class="portfolio-icon fas fa-external-link-alt"></i>
+                        <span class="portfolio-text">Visite meu portfólio</span>
+                    </a>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/ryan-marinho-861120211/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://github.com/ryanmarinhodev" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+                <p class="footer-copy">
+                    &copy; <span id="currentYear"></span> Todos os direitos reservados.
+                </p>
+                <p class="footer-note">
+                    Estou empolgado para contribuir com vocês, Supremo!
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci Minha Senha - Supremo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="senha.css">
+</head>
+<body>
+    <div class="container-esqueci-senha d-flex align-items-center justify-content-center min-vh-100">
+        <div class="cartao-esqueci-senha p-5 shadow-lg rounded-4">
+            <div class="text-center mb-4">
+                <img src="../images/logo-supremo-login.jpg" alt="Logotipo Supremo" class="logo mb-4">
+                <h4 class="titulo-esqueci-senha">Recuperação de Senha</h4>
+                <div class="linha-abaixo-titulo"></div>
+                <p class="texto-subtitulo text-muted">Digite seu e-mail para recuperar sua senha</p>
+            </div>
+            <form onsubmit="return tratarEsqueciSenha(event)">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="campoEmail" placeholder="Informe seu E-mail" required>
+                    <label for="campoEmail">Informe seu E-mail</label>
+                    <div class="feedback-invalido">Por favor, informe um e-mail válido.</div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar Instruções</button>
+                <div class="text-center mt-3">
+                    <a href="../index.html" class="text-decoration-none text-secondary pequeno">Voltar ao Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
